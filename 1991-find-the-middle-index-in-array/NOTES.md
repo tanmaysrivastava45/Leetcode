@@ -1,1 +1,1 @@
-​
+​this question is somewhat similar to that of pivot index as in pivot index also we used the same code and we use some different logic as well we used vector here and also to find the total sum we used for(int a:arr) this loop iterates every eliments in the array and then we just added the eliments from leftsum and checked whether leftsum==totalsum-leftsum-arr[i];
