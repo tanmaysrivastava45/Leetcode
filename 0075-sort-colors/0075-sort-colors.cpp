@@ -28,7 +28,7 @@ public:
         int n= nums.size();
         for(int i=1;i<n;i++)
         {
-            bool swappp=false;
+            bool swappp=false;// to reduce the time complexity in case the array is already sorted 
             for(int j=0;j<n-i;j++)
             {
                 if(nums[j]>nums[j+1])
