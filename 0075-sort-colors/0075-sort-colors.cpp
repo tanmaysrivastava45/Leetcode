@@ -22,26 +22,53 @@
 // bubble sorting
 
 
+// class Solution {
+// public:
+//     void sortColors(vector<int>& nums) {
+//         int n= nums.size();
+//         for(int i=1;i<n;i++)
+//         {
+//             bool swappp=false;// to reduce the time complexity in case the array is already sorted 
+//             for(int j=0;j<n-i;j++)
+//             {
+//                 if(nums[j]>nums[j+1])
+//                 {
+//                     swap(nums[j],nums[j+1]);
+//                     swappp=true;
+//                 }
+                
+//             }
+//             if(swappp==false)
+//             {
+//                 break;
+//             }
+//         }
+//     }
+// };
+
+// Insertion sort
+
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        int n= nums.size();
+        
+        int n=nums.size();
         for(int i=1;i<n;i++)
         {
-            bool swappp=false;// to reduce the time complexity in case the array is already sorted 
-            for(int j=0;j<n-i;j++)
+            int temp=nums[i];
+            int j=i-1;
+            for(;j>=0;j--)
             {
-                if(nums[j]>nums[j+1])
+                if(nums[j]>temp)
                 {
-                    swap(nums[j],nums[j+1]);
-                    swappp=true;
+                    nums[j+1]=nums[j];
                 }
+                else
+                {break;}
                 
             }
-            if(swappp==false)
-            {
-                break;
-            }
+            nums[j+1]=temp;// j gets reduced to -1 in first iteration 
         }
+             
     }
 };
