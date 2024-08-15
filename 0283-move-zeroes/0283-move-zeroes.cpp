@@ -15,6 +15,8 @@
 //         }
 //     }
 // };
+
+// this method is of copying array 
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
