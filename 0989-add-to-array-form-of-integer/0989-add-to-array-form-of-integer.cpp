@@ -32,9 +32,9 @@ public:
         int n=num.size();
         int i=n-1;
         int carry=k;
-        while(i>=0 || carry>0 )
+        while(i>=0 || carry>0 )  // for the case when carry will be left over while i is finished 
         {
-            if(i>=0)
+            if(i>=0) // we put this function in if because if carry will be left over then it won't work
             {
                 carry=carry+num[i];
                 i--;
@@ -42,7 +42,7 @@ public:
             v.push_back(carry%10);
             carry=carry/10;
         }
-        reverse(v.begin(),v.end());
+        reverse(v.begin(),v.end());  
         return v;
     }
 };
