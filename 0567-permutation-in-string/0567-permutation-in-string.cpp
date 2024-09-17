@@ -1,6 +1,6 @@
 class Solution {
 public:
-    
+    // function for checking whether the two array's are equal 
     bool check_equal(int a[26],int b[26])
     {
         for(int i=0;i<26;i++)
@@ -9,14 +9,13 @@ public:
             {
                 return 0;
             }
-               
-            
         }
          return 1;
     };
     
     bool checkInclusion(string s1, string s2) {
      int array1[26]={0};
+        // storing the s1 string character
         for(int i=0;i<s1.length();i++)
         {
             int index=s1[i]-'a';
