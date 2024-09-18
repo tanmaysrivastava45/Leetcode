@@ -14,10 +14,7 @@ public:
                 if(nums[i]==nums[j])
                 {
                     count++;
-                    
                 }
-                
-              
             }
             if(count>n/3 && find(ans.begin(), ans.end(), nums[i]) == ans.end())
                 {
