@@ -13,7 +13,7 @@ public:
         while(count<total)
         {   
             // printing start row
-            for(int i=startingcols;count<total && i<=endingcols;i++)
+            for(int i=startingcols;count<total && i<=endingcols;i++) // added the condition of count<total so that it does not stuck in loop and do unexpected stuffs
             {
                 ans.push_back(matrix[startingrow][i]);
                 count++;
