@@ -1,6 +1,7 @@
 class Solution {
 public:
     int largestCombination(vector<int>& candidates) {
+        // just count the number of bits at that bit position and to count that we will us simple addition approach
         int n=candidates.size();
         vector<int>bits(32);
         for(int i=0;i<n;i++)
