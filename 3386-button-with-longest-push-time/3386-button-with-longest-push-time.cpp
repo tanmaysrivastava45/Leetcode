@@ -5,8 +5,6 @@ public:
         int index=0;
         for(int i=1;i<events.size();i++)
         {
-            for(int j=0;j<events[0].size();j++)
-            {
                 if(events[i][1]-events[i-1][1]>maxt)
                 {
                     maxt=events[i][1]-events[i-1][1];
@@ -17,7 +15,6 @@ public:
                     maxt=events[i][1]-events[i-1][1];
                     index=events[i][0];
                 }
-            }
         }
         if(events[0][1]>maxt )
         {
