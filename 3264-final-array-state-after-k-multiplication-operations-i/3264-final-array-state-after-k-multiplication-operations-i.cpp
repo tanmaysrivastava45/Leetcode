@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {
-    int n=nums.size();
+        int n=nums.size();
         while(k--)
         {
             int mini=INT_MAX;
