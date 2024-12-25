@@ -12,9 +12,9 @@ public:
         {
             if(i>0)
         {
-            lastsum = (lastsum%26 + shifts[i-1]%26)%26;
+            lastsum = (lastsum + shifts[i-1])%26;
         }
-            int res=(sum%26+(s[i]-'a')%26-lastsum%26)%26;
+            int res=(sum+(s[i]-'a')-lastsum)%26;
             if(res<0)
             {
                 res = res + 26;
