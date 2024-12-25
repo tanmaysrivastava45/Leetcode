@@ -5,7 +5,7 @@ public:
         long long int sum=0;
         for(int i=0;i<n;i++)
         {
-            sum=(sum+shifts[i])%26;
+            sum=(sum+shifts[i]);
         }
         long long int lastsum=0;
         for(int i=0;i<n;i++)
