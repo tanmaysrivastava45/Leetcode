@@ -1,5 +1,5 @@
 // solution for question 40 of leetcode 
-
+// through recursion and backtracking 
 class Solution {
 
 private:
